@@ -1,0 +1,10 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.ref {
+  background-image: url(../../public/cccoil.svg);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
