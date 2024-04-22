@@ -1,8 +1,7 @@
-"use client"
+"use client";
 import Image from "next/image";
-import pc from "../../../public/pc.png";
 import Lottie from "lottie-react";
-import anim from "../../../public/ai.json"
+import anim from "../../../public/ai.json";
 
 export default function Hero() {
   return (
@@ -15,18 +14,7 @@ export default function Hero() {
         </div>
 
         <div className='basis-2/5 flex items-center lg:my-0 my-10 justify-center'>
-          {/* <Image
-            src={pc}
-            style={{ maxWidth: "100%", height: "auto" }}
-            placeholder='blur'
-            width={1200}
-            height={700}
-            quality={100}
-            className='object-contain'
-            alt='quanta'
-          /> */}
-
-          <Lottie className="lg:h-3/4 h-64" animationData={anim}/>
+          <Lottie className='lg:h-3/4 h-64' animationData={anim} />
         </div>
 
         <div className='basis-1/5 lg:flex flex-col items-end'>

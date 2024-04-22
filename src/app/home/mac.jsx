@@ -2,8 +2,7 @@ import React from "react";
 import { MacbookScroll } from "app/components/ui/macbook-scroll";
 const Mac = () => {
   return (
-    <main  className="text-text overflow-y-hidden">
-      <p></p>
+    <main className='text-text overflow-y-hidden'>
       <MacbookScroll />
 
       <p>

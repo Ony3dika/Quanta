@@ -4,7 +4,7 @@
 
 .ref {
   background-image: url(../../public/cccoil.svg);
-  background-size: contain;
+  background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
 }
