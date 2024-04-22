@@ -3,6 +3,9 @@ import React from "react";
 import Image from "next/image";
 import phone from "../../../public/phone.json";
 import data from "../../../public/data.json";
+import custom from "../../../public/custom.json";
+import inte from "../../../public/inte.json"
+import opt from "../../../public/opt.json";
 import Lottie from "lottie-react";
 
 let steps = [
@@ -21,19 +24,19 @@ let steps = [
   {
     title: "Customization and Configuration",
     body: "Once your data is onboarded, we customize and configure our analytics platform to meet your specific needs. This may involve creating custom dashboards, reports, and data visualizations tailored to your business objectives and key performance indicators (KPIs).",
-    pic: phone,
+    pic: custom,
   },
 
   {
     title: "Integration with Existing Systems",
     body: "Quanta's solutions seamlessly integrate with your existing systems and workflows, including CRMs, ERPs, and other business applications. Our team works closely with your IT department to ensure a smooth integration process, minimizing disruption to your day-to-day operations..",
-    pic: phone,
+    pic: inte,
   },
 
   {
     title: "Continuous Optimization",
     body: "As your business evolves, so do your data analytics needs. We continuously monitor and optimize our solutions to ensure they remain aligned with your changing requirements. Our data experts provide regular insights and recommendations to help you maximize the value of your data assets and drive business growth.",
-    pic: phone,
+    pic: opt,
   },
 ];
 
@@ -89,7 +92,7 @@ const Integration = () => {
               alt='pic'
             /> */}
 
-            <Lottie animationData={step.pic} />
+            <Lottie className={` ${index == 2 ? "h-80" : "h-auto"}`} animationData={step.pic} />
           </div>
         </section>
       ))}
